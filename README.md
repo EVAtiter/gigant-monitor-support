@@ -5,13 +5,39 @@
 CPU 使用率・ネットワークトラフィック・ディスク I/O を「眺めて楽しむ」ためのツールです。
 
 このリポジトリは Gigant Monitor の **サポート / 質問 / 要望 / 不具合報告** の窓口です。
-ソースコードやバイナリの配布は行っていません。配布は Mac App Store 経由です。
+下記 2 つの配布版に共通の窓口で、ソースコードの公開は行っていません。
 
 ---
 
 ## 入手
 
-- **Mac App Store**: https://apps.apple.com/app/gigant-monitor/id6777906549 （無料）
+**2 通りの配布があります。どちらも無料で、機能の大半は共通です。**
+
+### Mac App Store 版 —「Gigant Monitor」
+
+https://apps.apple.com/app/gigant-monitor/id6777906549
+
+Apple Silicon / Intel Mac の両方に対応。App Sandbox 有効。更新は App Store から届きます。
+
+### 直接配布版 —「Gigant Monitor Plus」
+
+Apple の公証済みバイナリを GitHub Releases と Homebrew で配布しています。
+
+```
+brew install --cask EVAtiter/tap/gigant-monitor-plus
+```
+
+- ダウンロード（zip）: https://github.com/EVAtiter/gigant-monitor-pro-release/releases/latest
+- **Apple Silicon (arm64) 専用**です
+
+App Store 版のすべての機能に加えて、**消費電力の表示**が使えます。
+
+- **消費電力メーター**: CPU ウィンドウの表示内容を「CPU 使用率 ↔ 消費電力」で切り替え
+- **電力・CPU タイムライン**: 上段に CPU 使用率、下段に消費電力の推移
+  （App Store 版のタイムラインは CPU のみ）
+
+Mac の SoC 全体の消費電力を読むには App Store のサンドボックスでは使えない API が必要なため、
+この機能は直接配布版に限られます。逆に言うと、**消費電力に興味がなければ App Store 版で十分**です。
 
 ## 質問・要望・不具合報告
 
@@ -72,12 +98,39 @@ instrument panels. It's about atmosphere, not precision — a way to enjoy
 watching CPU, network, and disk activity flow.
 
 This repository is the **support / questions / requests / bug reports**
-channel for Gigant Monitor. Source code and binaries are not distributed
-here; the app is available exclusively via the Mac App Store.
+channel for Gigant Monitor. It serves both editions listed below.
+Source code is not published here.
 
 ## Get the app
 
-- **Mac App Store**: https://apps.apple.com/app/gigant-monitor/id6777906549 (free)
+**Two editions are available. Both are free, and they share almost every feature.**
+
+### Mac App Store — "Gigant Monitor"
+
+https://apps.apple.com/app/gigant-monitor/id6777906549
+
+Runs on both Apple Silicon and Intel Macs. Sandboxed. Updates arrive through the App Store.
+
+### Direct download — "Gigant Monitor Plus"
+
+Notarized builds are distributed via GitHub Releases and Homebrew.
+
+```
+brew install --cask EVAtiter/tap/gigant-monitor-plus
+```
+
+- Download (zip): https://github.com/EVAtiter/gigant-monitor-pro-release/releases/latest
+- **Apple Silicon (arm64) only**
+
+It has everything the App Store edition has, plus **power consumption**:
+
+- **Power meter**: switch the CPU window between CPU usage and power draw
+- **Power & CPU timeline**: CPU usage on top, power draw below
+  (the App Store edition's timeline shows CPU only)
+
+Reading whole-SoC power draw requires an API that is not available inside the App Store
+sandbox, so this is limited to the direct-download edition. If power draw isn't something
+you care about, **the App Store edition is all you need**.
 
 ## Features
 
