@@ -17,7 +17,7 @@ CPU 使用率・ネットワークトラフィック・ディスク I/O を「�
 
 https://apps.apple.com/app/gigant-monitor/id6777906549
 
-Apple Silicon / Intel Mac の両方に対応。App Sandbox 有効。更新は App Store から届きます。
+Apple Silicon（M1 以降）専用。App Sandbox 有効。更新は App Store から届きます。
 
 ### 直接配布版 —「Gigant Monitor Plus」
 
@@ -85,8 +85,7 @@ Gigant Monitor は **データを一切収集しません**。詳細は [PRIVACY
 ## 動作要件
 
 - macOS 14.0 Sonoma 以降
-- Apple Silicon / Intel Mac 両対応（CPU メーターは公開 Mach API、
-  ネットワークは `getifaddrs`、ディスクは IOKit ベースなのでアーキテクチャに依存しません）
+- Apple Silicon（M1 以降）専用
 
 ---
 
@@ -109,7 +108,7 @@ Source code is not published here.
 
 https://apps.apple.com/app/gigant-monitor/id6777906549
 
-Runs on both Apple Silicon and Intel Macs. Sandboxed. Updates arrive through the App Store.
+Requires a Mac with Apple silicon (M1 or later). Sandboxed. Updates arrive through the App Store.
 
 ### Direct download — "Gigant Monitor Plus"
 
@@ -178,4 +177,4 @@ Gigant Monitor **collects no data of any kind**. See [PRIVACY.md](PRIVACY.md) fo
 ## System requirements
 
 - macOS 14.0 Sonoma or later
-- Apple Silicon and Intel Macs are both supported.
+- Requires a Mac with Apple silicon (M1 or later).
